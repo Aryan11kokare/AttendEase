@@ -67,51 +67,12 @@ function Navbar() {
 
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a
-              href="#"
-              className="text-gray-900 hover:bg-blue-50 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-            >
-              Dashboard
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-            >
-              Mark Attendance
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-            >
-              View Records
-            </a>
-            <a
-              href="#"
-              className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium transition-colors"
-            >
-              Reports
-            </a>
-          </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
-            <div className="flex items-center px-5">
-              <div className="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold">
-                JD
-              </div>
-              <div className="ml-3">
-                <div className="text-base font-medium text-gray-800">
-                  John Doe
-                </div>
-                <div className="text-sm font-medium text-gray-500">
-                  john@example.com
-                </div>
-              </div>
-            </div>
             <div className="mt-3 px-2 space-y-1">
-              <button className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
-                Notifications
-              </button>
-              <button className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors">
+              <button
+                onClick={handleLogout}
+                className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors"
+              >
                 Logout
               </button>
             </div>

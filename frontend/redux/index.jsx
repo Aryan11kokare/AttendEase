@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const clientServer = axios.create({
-  baseURL: "http://localhost:8000",
+  baseURL: "https://attendease-prjv.onrender.com",
 });
